@@ -1,0 +1,12 @@
+[Unit]
+Description=hotplug screen
+
+[Service]
+Type=simple
+RemainAfterExit=no
+ExecStart=/usr/local/bin/mh
+User=gms
+KillMode=none
+
+[Install]
+WantedBy=multi-user.target
