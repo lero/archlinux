@@ -4,7 +4,7 @@ Description=hotplug screen
 [Service]
 Type=simple
 RemainAfterExit=no
-ExecStart=/usr/local/bin/mh
+ExecStart=/home/gms/.config/i3/scripts/mh.sh
 User=gms
 KillMode=none
 
