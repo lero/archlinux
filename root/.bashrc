@@ -2,6 +2,9 @@
 
 [[ $- != *i* ]] && return
 
+shopt -s histappend
+shopt -s checkwinsize
+
 alias vi='vim'
 alias ls='ls --color=auto -CF'
 alias grep='grep --color=auto'
@@ -9,6 +12,10 @@ alias grep='grep --color=auto'
 export PS1='\[\e[0;32m\]\u@\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 export LESS='-R'
 export EDITOR='vim'
+export HISTSIZE=5000
+export HISTFILESIZE=10000
+export HISTCONTROL=ignoredups
+export HISTIGNORE='ls:bg:fg:history'
 
 man() {
   env \
