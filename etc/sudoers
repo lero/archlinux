@@ -69,8 +69,6 @@
 # Defaults!/usr/local/bin/sudoreplay !log_output
 # Defaults!REBOOT !log_output
 
-Defaults env_keep += "http_proxy https_proxy"
-
 ##
 ## Runas alias specification
 ##
